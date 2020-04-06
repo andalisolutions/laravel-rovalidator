@@ -1,0 +1,43 @@
+{
+    "name": "andalisolutions/laravel-rovalidator",
+    "description": "Romanian CIF, CNP, IBAN validations",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrei Ciungulete",
+            "email": "andrei.ciungulete@andali.ro",
+            "homepage": "http://www.andali.ro",
+            "role" : "developer"
+        }
+    ],
+    "homepage": "https://github.com/laravel-rovalidator",
+    "keywords": ["Laravel", "Laravel Romania", "Validator CIF"],
+    "require": {
+        "illuminate/support": "^7.0",
+        "php": "^7.4",
+        "ext-json" : "*",
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "orchestra/testbench": "^5.0",
+        "friendsofphp/php-cs-fixer": "^2.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "Andali\\Rovalidator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Andali\\Rovalidator\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Andali\\Rovalidator\\RovalidatorServiceProvider"
+            ]
+        }
+    }
+}
