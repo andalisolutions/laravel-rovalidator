@@ -11,7 +11,7 @@ class Cnp
         }
         $cnp = str_split($cnp);
         unset($p_cnp);
-        $hashTable = [ 2, 7, 9, 1, 4, 6, 3, 5, 8, 2, 7, 9 ];
+        $hashTable = [2, 7, 9, 1, 4, 6, 3, 5, 8, 2, 7, 9];
         $hashResult = 0;
 
         for ($i = 0; $i < 13; $i++) {
@@ -53,11 +53,11 @@ class Cnp
                     $year -= 100;
                 }
                 break;
-            default: {
+            default:
                 return false;
-            }
+
         }
 
-        return ($year > 1800 && $year < 2099 && $cnp[12] == $hashResult);
+        return $year > 1800 && $year < 2099 && $cnp[12] == $hashResult;
     }
 }
