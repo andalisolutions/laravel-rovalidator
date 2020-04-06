@@ -2,8 +2,6 @@
 
 namespace Andali\Rovalidator\Tests;
 
-use Andali\Rovalidator\Cif;
-
 class CifTests extends TestCase
 {
     /** @test */
@@ -61,6 +59,5 @@ class CifTests extends TestCase
 
         $v = $this->app['validator']->make($data5, $rules);
         $this->assertFalse($v->passes());
-
     }
 }
