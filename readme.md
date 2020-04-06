@@ -55,13 +55,13 @@ Please see the [license file](license.md) for more information.
 [ico-version]: https://img.shields.io/packagist/v/andalisolutions/laravel-rovalidator.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/andalisolutions/laravel-rovalidator.svg?style=flat-square
 [ico-build]: https://github.com/andalisolutions/laravel-rovalidator/workflows/tests/badge.svg
-[ico-styleci]: https://styleci.io/repos/253312070/shield
+[ico-styleci]: https://styleci.io/repos/253530401/shield
 [ico-scrutinizer]: https://img.shields.io/scrutinizer/g/andalisolutions/laravel-rovalidator.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/andalisolutions/laravel-rovalidator
 [link-downloads]: https://packagist.org/packages/andalisolutions/laravel-rovalidator
 [link-build]: https://github.com/andalisolutions/laravel-rovalidator/actions
-[link-styleci]: https://styleci.io/repos/253312070
+[link-styleci]: https://styleci.io/repos/253530401
 [link-scrutinizer]: https://scrutinizer-ci.com/g/andalisolutions/laravel-rovalidator
 [link-author]: https://github.com/andalisolutions
 [link-contributors]: ../../contributors
