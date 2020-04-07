@@ -74,7 +74,9 @@ class CnpTests extends TestCase
     public function it_check_all_rules()
     {
         $rules = ['customer_cnp' => 'cnp'];
-        $data1 = ['customer_cnp' => ''];
+
+        $data01 = ['customer_cnp' => '2880231030031'];
+        $data1 = ['customer_cnp' => '2881133030031'];
         $data2 = ['customer_cnp' => '2881119030030'];
         $data3 = ['customer_cnp' => '3881119030030'];
         $data4 = ['customer_cnp' => '4881119030030'];
@@ -84,6 +86,12 @@ class CnpTests extends TestCase
         $data8 = ['customer_cnp' => '8881119030030'];
         $data9 = ['customer_cnp' => '9881119030030'];
         $data0 = ['customer_cnp' => '0881119030030'];
+
+        $v = $this->app['validator']->make($data01, $rules);
+        $this->assertFalse($v->passes());
+
+        $v = $this->app['validator']->make($data1, $rules);
+        $this->assertFalse($v->passes());
 
         $v = $this->app['validator']->make($data2, $rules);
         $this->assertFalse($v->passes());
