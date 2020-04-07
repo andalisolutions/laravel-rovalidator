@@ -4,13 +4,13 @@ namespace Andali\Rovalidator;
 
 class Cnp
 {
-    public static function validate(string $cnp): bool
+    public static function validate(string $client_cnp): bool
     {
-        if (strlen($cnp) != 13) {
+        if (strlen($client_cnp) != 13) {
             return false;
         }
-        $cnp = str_split($cnp);
-        unset($p_cnp);
+        $cnp = str_split($client_cnp);
+        unset($client_cnp);
         $hashTable = [ 2, 7, 9, 1, 4, 6, 3, 5, 8, 2, 7, 9 ];
         $hashResult = 0;
 

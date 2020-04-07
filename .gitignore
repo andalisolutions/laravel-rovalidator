@@ -4,3 +4,4 @@ vendor
 html
 build
 coverage.clover
+.php_cs.cache
