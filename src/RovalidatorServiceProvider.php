@@ -20,7 +20,7 @@ class RovalidatorServiceProvider extends ServiceProvider
         });
 
         Validator::replacer('cnp', function ($message, $attribute, $rule, $parameters) {
-            $message = "Cnp-ul introdus nu este corect!";
+            $message = 'Cnp-ul introdus nu este corect!';
 
             return $message;
         });
@@ -33,7 +33,7 @@ class RovalidatorServiceProvider extends ServiceProvider
         });
 
         Validator::replacer('cif', function ($message, $attribute, $rule, $parameters) {
-            $message = "CIF-ul introdus nu este corect!";
+            $message = 'CIF-ul introdus nu este corect!';
 
             return $message;
         });

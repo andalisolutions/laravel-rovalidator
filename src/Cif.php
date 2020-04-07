@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Andali\Rovalidator;
 
 use Illuminate\Support\Str;
