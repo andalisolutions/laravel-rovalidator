@@ -20,8 +20,7 @@ class Cnp
 
     private static $controlKey = [2, 7, 9, 1, 4, 6, 3, 5, 8, 2, 7, 9];
 
-<<<<<<< HEAD
-    private static $years = [
+    public array $years = [
         0 => 0,
         1 => 1900,
         2 => 1900,
@@ -34,8 +33,6 @@ class Cnp
         9 => 2000,
     ];
 
-=======
->>>>>>> 3ea75429af4a5a9ce82db71d8b8a095e5e705694
     public function __construct($cnp)
     {
         $this->cnp = trim($cnp);
@@ -73,38 +70,7 @@ class Cnp
     {
         $year = ($this->_cnp[1] * 10) + $this->_cnp[2];
 
-<<<<<<< HEAD
-        $this->_year = $year + static::$years[$this->_cnp[0]];
-=======
-        switch ($this->_cnp[0]) {
-            case 1:
-            case 2:
-                $this->_year = $year + 1900;
-
-                break;
-            case 3:
-            case 4:
-                $this->_year = $year + 1800;
-
-                break;
-            case 5:
-            case 6:
-                $this->_year = $year + 2000;
-
-                break;
-            case 7:
-            case 8:
-            case 9:
-                $this->_year = $year + 2000;
-                if ($this->_year > (int) date('Y') - 14) {
-                    $this->_year -= 100;
-                }
-
-                break;
-            default:
-                $this->_year = 0;
-        }
->>>>>>> 3ea75429af4a5a9ce82db71d8b8a095e5e705694
+        $this->_year = $year + $this->years[$this->_cnp[0]];
     }
 
     private function setMonth()
@@ -117,14 +83,6 @@ class Cnp
         $this->_day = $this->_cnp[5].$this->_cnp[6];
     }
 
-<<<<<<< HEAD
-=======
-    private function setCounty()
-    {
-        $this->_cc = $this->_cnp[7].$this->_cnp[8];
-    }
-
->>>>>>> 3ea75429af4a5a9ce82db71d8b8a095e5e705694
     private function checkYear()
     {
         return ($this->_year >= 1800) && ($this->_year <= 2099);
