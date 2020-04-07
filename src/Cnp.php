@@ -11,7 +11,7 @@ class Cnp
         }
         $cnp = str_split($client_cnp);
         unset($client_cnp);
-        $hashTable = [ 2, 7, 9, 1, 4, 6, 3, 5, 8, 2, 7, 9 ];
+        $hashTable = [2, 7, 9, 1, 4, 6, 3, 5, 8, 2, 7, 9];
 
         $hashResult = 0;
 
