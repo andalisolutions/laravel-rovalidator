@@ -9,15 +9,10 @@ class Cnp
         if (strlen($client_cnp) != 13) {
             return false;
         }
-<<<<<<< HEAD
         $cnp = str_split($client_cnp);
         unset($client_cnp);
         $hashTable = [ 2, 7, 9, 1, 4, 6, 3, 5, 8, 2, 7, 9 ];
-=======
-        $cnp = str_split($cnp);
-        unset($p_cnp);
-        $hashTable = [2, 7, 9, 1, 4, 6, 3, 5, 8, 2, 7, 9];
->>>>>>> 64b43f53204eb743185e193b71f647d911c49b31
+
         $hashResult = 0;
 
         for ($i = 0; $i < 13; $i++) {
