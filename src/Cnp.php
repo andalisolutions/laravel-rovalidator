@@ -2,8 +2,6 @@
 
 namespace Andali\Rovalidator;
 
-use Throwable;
-
 class Cnp
 {
     private $_isValid = false;
