@@ -15,11 +15,11 @@ class RovalidatorServiceProvider extends ServiceProvider
 
     private function registerCnpValidator()
     {
-        Validator::extend('cnp', function($attribute, $value, $parameters) {
+        Validator::extend('cnp', function ($attribute, $value, $parameters) {
             return Cnp::validate($value);
         });
 
-        Validator::replacer('cnp', function($message, $attribute, $rule, $parameters) {
+        Validator::replacer('cnp', function ($message, $attribute, $rule, $parameters) {
             $message = 'Cnp-ul introdus nu este corect!';
 
             return $message;
@@ -28,11 +28,11 @@ class RovalidatorServiceProvider extends ServiceProvider
 
     private function registerCifValidator()
     {
-        Validator::extend('cif', function($attribute, $value, $parameters) {
+        Validator::extend('cif', function ($attribute, $value, $parameters) {
             return Cif::validate($value);
         });
 
-        Validator::replacer('cif', function($message, $attribute, $rule, $parameters) {
+        Validator::replacer('cif', function ($message, $attribute, $rule, $parameters) {
             $message = 'CIF-ul introdus nu este corect!';
 
             return $message;
