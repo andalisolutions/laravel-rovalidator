@@ -16,7 +16,7 @@ class Cnp
         $hashResult = 0;
 
         for ($i = 0; $i < 13; $i++) {
-            if (! is_numeric($cnp[$i])) {
+            if (!is_numeric($cnp[$i])) {
                 return false;
             }
             $cnp[$i] = (int) $cnp[$i];
