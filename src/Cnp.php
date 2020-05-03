@@ -20,7 +20,9 @@ class Cnp
 
     private static $controlKey = [2, 7, 9, 1, 4, 6, 3, 5, 8, 2, 7, 9];
 
-    public array $years = [
+    public array
+
+ $years = [
         0 => 0,
         1 => 1900,
         2 => 1900,

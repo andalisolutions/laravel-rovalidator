@@ -39,5 +39,10 @@
                 "Andali\\Rovalidator\\RovalidatorServiceProvider"
             ]
         }
+    },
+    "scripts" : {
+        "format": [
+            "vendor/bin/php-cs-fixer fix"
+        ]
     }
 }
