@@ -53,7 +53,7 @@ class Cnp
             return false;
         }
 
-        if (! ctype_digit($this->cnp)) {
+        if (!ctype_digit($this->cnp)) {
             return false;
         }
 
