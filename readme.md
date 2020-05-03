@@ -3,7 +3,7 @@ Romanian CIF, CNP validations - upcoming another (IBAN, BIC)
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Build Status][ico-build]][link-build]
-[![StyleCI][ico-styleci]][link-styleci]
+[![Code Style](https://github.com/andalisolutions/laravel-rovalidator/workflows/Code%20Style/badge.svg)](https://github.com/laravel-rovalidator/actions?query=workflow%3A%22Code+Style%22)
 [![Quality Score][ico-scrutinizer]][link-scrutinizer]
 [![Total Downloads][ico-downloads]][link-downloads]
 ## Installation
@@ -55,7 +55,6 @@ Please see the [license file](license.md) for more information.
 [ico-version]: https://img.shields.io/packagist/v/andalisolutions/laravel-rovalidator.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/andalisolutions/laravel-rovalidator.svg?style=flat-square
 [ico-build]: https://github.com/andalisolutions/laravel-rovalidator/workflows/tests/badge.svg
-[ico-styleci]: https://styleci.io/repos/253530401/shield
 [ico-scrutinizer]: https://img.shields.io/scrutinizer/g/andalisolutions/laravel-rovalidator.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/andalisolutions/laravel-rovalidator
